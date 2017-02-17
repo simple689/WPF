@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeddyWpfApplication_Demo"
+        xmlns:Teddy_Demo="clr-namespace:TeddyWpfCustomControlLibrary_Demo;assembly=TeddyWpfCustomControlLibrary_Demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Teddy_Demo:CustomControl1 x:Name="button" Margin="157.601,113.487,214.852,131.615" Background="Black"/>
     </Grid>
 </Window>
