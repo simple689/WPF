@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfApplication_Base", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfControlLibrary_Base", "TeddyWpfControlLibrary_Base\TeddyWpfControlLibrary_Base.csproj", "{8A96AB17-4AAE-4A49-A045-E2D6055B4C4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfApplication_Demo", "TeddyWpfApplication_Demo\TeddyWpfApplication_Demo.csproj", "{2421A51A-8EEB-4A80-B8C2-7EA83E80E52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfCustomControlLibrary_Button", "TeddyWpfCustomControlLibrary_Button\TeddyWpfCustomControlLibrary_Button.csproj", "{B9297777-3F02-4D1E-89BE-BBA86FCFE0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfControlLibrary_Demo", "TeddyWpfControlLibrary_Demo\TeddyWpfControlLibrary_Demo.csproj", "{73CF7396-BAAF-490A-B3C0-DF0E602EBAA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeddyWpfCustomControlLibrary_Demo", "TeddyWpfCustomControlLibrary_Demo\TeddyWpfCustomControlLibrary_Demo.csproj", "{3C4985EB-3E75-416A-BB7B-5F40700FD5AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,22 @@ Global
 		{8A96AB17-4AAE-4A49-A045-E2D6055B4C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A96AB17-4AAE-4A49-A045-E2D6055B4C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A96AB17-4AAE-4A49-A045-E2D6055B4C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2421A51A-8EEB-4A80-B8C2-7EA83E80E52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2421A51A-8EEB-4A80-B8C2-7EA83E80E52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2421A51A-8EEB-4A80-B8C2-7EA83E80E52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2421A51A-8EEB-4A80-B8C2-7EA83E80E52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9297777-3F02-4D1E-89BE-BBA86FCFE0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9297777-3F02-4D1E-89BE-BBA86FCFE0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9297777-3F02-4D1E-89BE-BBA86FCFE0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9297777-3F02-4D1E-89BE-BBA86FCFE0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CF7396-BAAF-490A-B3C0-DF0E602EBAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CF7396-BAAF-490A-B3C0-DF0E602EBAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CF7396-BAAF-490A-B3C0-DF0E602EBAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CF7396-BAAF-490A-B3C0-DF0E602EBAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4985EB-3E75-416A-BB7B-5F40700FD5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4985EB-3E75-416A-BB7B-5F40700FD5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4985EB-3E75-416A-BB7B-5F40700FD5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4985EB-3E75-416A-BB7B-5F40700FD5AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
