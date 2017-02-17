@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace SpeedShark2
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// CustomControl_Base.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CustomControl_Base : UserControl
     {
-        public MainWindow()
+        public CustomControl_Base()
         {
             InitializeComponent();
         }
