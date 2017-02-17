@@ -1,1 +1,2 @@
-Blend-》对象浏览器-》System.Windows.Controls
+Blend-》对象浏览器-》System.Windows.Controls。
+新建一个自定义控件，改变继承类，需要修改xaml和cs。
