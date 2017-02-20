@@ -24,5 +24,17 @@ namespace SpeedShark2
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // 设置最大化
+            this.WindowState = System.Windows.WindowState.Maximized;
+            Init();
+        }
+
+        public void Init()
+        {
+            
+        }
     }
 }
