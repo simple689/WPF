@@ -1,0 +1,72 @@
+SS2View
+https://10.0.0.188:8443/svn/mmo2016001/SpeedShark3
+
+MainWindow.xaml
+<Window x:Class="SpeedShark2.Panel.MainWindow"
+        xmlns:panel="clr-namespace:SpeedShark2.Panel"
+        xmlns:module="clr-namespace:SpeedShark2.Module"
+        xmlns:avalon="http://schemas.xceed.com/wpf/xaml/avalondock"
+        mc:Ignorable="d"
+        Title="{StaticResource Text.title}" WindowStartupLocation="CenterScreen" Width="1280" Height="800"
+        FontFamily="Segoe UI, Microsoft YaHei UI" 
+        Loaded="windowLoaded"
+        Closing="windowClosing"
+        Unloaded="windowUnLoaded"
+        Closed="windowClosed"
+        >
+    <Window.CommandBindings>
+        <CommandBinding Command="New" Executed="newCommandExecuted"></CommandBinding>
+        <CommandBinding Command="Open" Executed="openCommandExecuted"></CommandBinding>
+        <CommandBinding Command="Save" Executed="saveCommandExecuted" CanExecute="projectExist"></CommandBinding>
+        <CommandBinding Command="SaveAs" Executed="saveAsCommandExecuted"></CommandBinding>
+    </Window.CommandBindings>
+    <DockPanel LastChildFill="True" FocusManager.IsFocusScope="True">
+        <panel:ToolBox x:Name="toolbar" DockPanel.Dock="Top"/>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="SpeedShark Editor 2.0" Foreground="{StaticResource textColor}" Background="{StaticResource selectBackColor1}"
+             BorderBrush="{StaticResource selectBorderColor}" BorderThickness="0"/>
+        </StatusBar>
+        <Grid>
+            <avalon:DockingManager x:Name="dockingManager">
+                <avalon:LayoutRoot x:Name="layoutRoot">
+                    <avalon:LayoutPanel Orientation="Vertical">
+                        <avalon:LayoutPanel Orientation="Horizontal">
+                            <avalon:LayoutAnchorablePane DockWidth="200">
+                                <avalon:LayoutAnchorable x:Name="hierarchy" ContentId="hierarchy" Title="{StaticResource Text.hierarchy}" CanHide="False">
+                                    <panel:HierarchyPanel x:Name="hierarchyPanel"></panel:HierarchyPanel>
+                                </avalon:LayoutAnchorable>
+                            </avalon:LayoutAnchorablePane>
+                            <avalon:LayoutDocumentPane ShowHeader="False" CanRepositionItems="False">
+                                <avalon:LayoutDocument ContentId="renderWindow" Title="{StaticResource Text.emptyScene}" CanClose="False" CanFloat="False">
+                                    <panel:RenderWindow x:Name="renderPanel"/>
+                                </avalon:LayoutDocument>
+                            </avalon:LayoutDocumentPane>
+                            <avalon:LayoutAnchorablePaneGroup DockWidth="300">
+                                <avalon:LayoutAnchorablePane>
+                                    <avalon:LayoutAnchorable x:Name="property" ContentId="property" Title="{StaticResource Text.property}">
+                                        <panel:PropertyPanel x:Name="propertyPanel"/>    
+                                    </avalon:LayoutAnchorable>
+                                    <avalon:LayoutAnchorable x:Name="material" ContentId="material" Title="{StaticResource Text.material}">
+                                        <panel:MaterialPanel x:Name="materialPanel"/>
+                                    </avalon:LayoutAnchorable>
+                                </avalon:LayoutAnchorablePane>
+                            </avalon:LayoutAnchorablePaneGroup>
+                        </avalon:LayoutPanel>
+                        <avalon:LayoutPanel DockHeight="150">
+                            <avalon:LayoutAnchorablePane>
+                                <avalon:LayoutAnchorable x:Name="asset" ContentId="asset" Title="{StaticResource Text.asset}">
+                                    <panel:AssetPanel x:Name="assetPanel"></panel:AssetPanel>
+                                </avalon:LayoutAnchorable>
+                            </avalon:LayoutAnchorablePane>
+                            <avalon:LayoutAnchorablePane>
+                                <avalon:LayoutAnchorable x:Name="console" ContentId="console" Title="{StaticResource Text.console}">
+                                    <panel:ConsolePanel x:Name="consolePanel"></panel:ConsolePanel>
+                                </avalon:LayoutAnchorable>
+                            </avalon:LayoutAnchorablePane>
+                        </avalon:LayoutPanel>
+                    </avalon:LayoutPanel>
+                </avalon:LayoutRoot>
+            </avalon:DockingManager>
+        </Grid>
+    </DockPanel>
+</Window>
