@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDataDisplay", "..\..\src\DynamicDataDisplay\DynamicDataDisplay.csproj", "{ECD37682-DF7E-409F-912D-0965634556B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapBasedGraphSample", "..\..\src\DevSamples\BitmapBasedGraphSample\BitmapBasedGraphSample.csproj", "{DA84FAB1-E9E8-4DFB-9806-626104DD4804}"
@@ -12,7 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDataDisplay.Maps.Extra", "..\..\src\DynamicDataDisplay.Maps.Extra\DynamicDataDisplay.Maps.Extra.csproj", "{2097E056-FF28-4C99-9B75-07EA8F3B982B}"
 EndProject
 Global
-	 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 		 	 
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
