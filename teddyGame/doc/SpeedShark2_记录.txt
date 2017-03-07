@@ -1,0 +1,47 @@
+SS2View
+https://10.0.0.188:8443/svn/mmo2016001/SpeedShark3
+
+MainWindow.xaml
+<Window Panel.MainWindow"
+
+Localization
+Title="{StaticResource Text.title}" 
+		
+        Loaded="windowLoaded"
+        Closing="windowClosing"
+        Unloaded="windowUnLoaded"
+        Closed="windowClosed"
+
+	<Window.CommandBindings>
+        <CommandBinding Command="New" Executed="newCommandExecuted"></CommandBinding>
+        <CommandBinding Command="Open" Executed="openCommandExecuted"></CommandBinding>
+        <CommandBinding Command="Save" Executed="saveCommandExecuted" CanExecute="projectExist"></CommandBinding>
+        <CommandBinding Command="SaveAs" Executed="saveAsCommandExecuted"></CommandBinding>
+    </Window.CommandBindings>
+	
+
+
+<Window Panel.ConfigWindow"
+
+<panel:ToolBox x:Name="toolbar" DockPanel.Dock="Top"/>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="SpeedShark Editor 2.0" Foreground="{StaticResource textColor}" Background="{StaticResource selectBackColor1}"
+             BorderBrush="{StaticResource selectBorderColor}" BorderThickness="0"/>
+        </StatusBar>
+		
+<panel:HierarchyPanel x:Name="hierarchyPanel"></panel:HierarchyPanel>
+<panel:RenderWindow x:Name="renderPanel"/>
+<panel:PropertyPanel x:Name="propertyPanel"/>    
+<panel:MaterialPanel x:Name="materialPanel"/>
+<panel:AssetPanel x:Name="assetPanel"></panel:AssetPanel>
+<panel:ConsolePanel x:Name="consolePanel"></panel:ConsolePanel>
+    
+app.config
+se2.Properties.Settings
+
+AppViewer.xaml
+ResourceDictionary.MergedDictionaries
+
+
+
