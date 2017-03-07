@@ -31,16 +31,16 @@ namespace SpeedShark2
 			InvalidateVisual();
 		}
 
-		public PointMarker Marker
+		public BasePointMarker Marker
 		{
-			get { return (PointMarker)GetValue(MarkerProperty); }
+			get { return (BasePointMarker)GetValue(MarkerProperty); }
 			set { SetValue(MarkerProperty, value); }
 		}
 
 		public static readonly DependencyProperty MarkerProperty =
 			DependencyProperty.Register(
 			  "Marker",
-			  typeof(PointMarker),
+			  typeof(BasePointMarker),
 			  typeof(MarkerPointsGraph),
 			  new FrameworkPropertyMetadata { DefaultValue = null, AffectsRender = true }
 				  );

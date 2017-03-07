@@ -97,7 +97,7 @@ namespace SpeedShark2
 		{
 			var res = AddLineGraph(plotter, pointSource,
 				new Pen(new SolidColorBrush(ColorHelper.CreateRandomHsbColor()), lineThickness),
-				(PointMarker)null,
+				(BasePointMarker)null,
 				new PenDescription(description));
 
 			return res.LineGraph;
@@ -112,7 +112,7 @@ namespace SpeedShark2
 		/// <returns></returns>
 		[SuppressMessage("Microsoft.Design", "CA1011:ConsiderPassingBaseTypesAsParameters")]
 		public static LineAndMarker<MarkerPointsGraph> AddLineGraph(this Plotter2D plotter, IPointDataSource pointSource,
-				Pen linePen, PointMarker marker, Description description)
+				Pen linePen, BasePointMarker marker, Description description)
 		{
 			if (pointSource == null)
 				throw new ArgumentNullException("pointSource");
@@ -168,7 +168,7 @@ namespace SpeedShark2
 		/// <returns></returns>
 		[SuppressMessage("Microsoft.Design", "CA1011:ConsiderPassingBaseTypesAsParameters")]
 		public static LineAndMarker<ElementMarkerPointsGraph> AddLineGraph(this Plotter2D plotter, IPointDataSource pointSource,
-				Pen linePen, ElementPointMarker marker, Description description)
+				Pen linePen, BaseElementPointMarker marker, Description description)
 		{
 			if (pointSource == null)
 				throw new ArgumentNullException("pointSource");

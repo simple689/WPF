@@ -6,7 +6,7 @@ namespace SpeedShark2.PointMarkers
 {
     /// <summary>Invokes specified delegate for rendering custon marker
     /// at every point of graph</summary>
-	public sealed class DelegatePointMarker : PointMarker {
+	public sealed class DelegatePointMarker : BasePointMarker {
 		public MarkerRenderer RenderCallback { get; set; }
 
 		public DelegatePointMarker() { }

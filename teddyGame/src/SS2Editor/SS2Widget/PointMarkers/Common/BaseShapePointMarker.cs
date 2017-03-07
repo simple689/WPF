@@ -5,7 +5,7 @@ namespace SpeedShark2.PointMarkers
 {
     /// <summary>Abstract class that extends PointMarker and contains
     /// marker property as Pen, Brush and Size</summary>
-	public abstract class ShapePointMarker : PointMarker {
+	public abstract class BaseShapePointMarker : BasePointMarker {
 		/// <summary>Size of marker in points</summary>
 		public double Size {
 			get { return (double)GetValue(SizeProperty); }
@@ -16,7 +16,7 @@ namespace SpeedShark2.PointMarkers
 			DependencyProperty.Register(
 			  "Size",
 			  typeof(double),
-			  typeof(ShapePointMarker),
+			  typeof(BaseShapePointMarker),
 			  new FrameworkPropertyMetadata(5.0));
 
 
@@ -30,7 +30,7 @@ namespace SpeedShark2.PointMarkers
 			DependencyProperty.Register(
 			  "Pen",
 			  typeof(Pen),
-			  typeof(ShapePointMarker),
+			  typeof(BaseShapePointMarker),
 			  new FrameworkPropertyMetadata(null));
 
 
@@ -43,7 +43,7 @@ namespace SpeedShark2.PointMarkers
 			DependencyProperty.Register(
 			  "Fill",
 			  typeof(Brush),
-			  typeof(ShapePointMarker),
+			  typeof(BaseShapePointMarker),
 			  new FrameworkPropertyMetadata(Brushes.Red));
 	}
 }

@@ -326,12 +326,13 @@
     <Compile Include="PointMarkers\CenteredTextMarker.cs" />
     <Compile Include="PointMarkers\CircleElementPointMarker.cs" />
     <Compile Include="PointMarkers\CirclePointMarker.cs" />
-    <Compile Include="PointMarkers\CompositePointMarker.cs" />
-    <Compile Include="PointMarkers\DelegatePointMarker.cs" />
-    <Compile Include="PointMarkers\ElementPointMarker.cs" />
-    <Compile Include="PointMarkers\PointMarker.cs" />
-    <Compile Include="PointMarkers\ShapeElementPointMarker.cs" />
-    <Compile Include="PointMarkers\ShapePointMarker.cs" />
+    <Compile Include="PointMarkers\Common\CompositePointMarker.cs" />
+    <Compile Include="PointMarkers\Common\DelegatePointMarker.cs" />
+    <Compile Include="PointMarkers\Common\BaseElementPointMarker.cs" />
+    <Compile Include="PointMarkers\Common\BasePointMarker.cs" />
+    <Compile Include="PointMarkers\Common\BaseShapeElementPointMarker.cs" />
+    <Compile Include="PointMarkers\Common\BaseShapePointMarker.cs" />
+    <Compile Include="PointMarkers\SquareElementPointMarker.cs" />
     <Compile Include="PointMarkers\TrianglePointMarker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

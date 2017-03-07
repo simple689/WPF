@@ -5,7 +5,7 @@ using System.Windows.Media;
 namespace SpeedShark2.PointMarkers
 {
     /// <summary>Renders specified text near the point</summary>
-	public class CenteredTextMarker : PointMarker {
+	public class CenteredTextMarker : BasePointMarker {
 		public string Text {
 			get { return (string)GetValue(TextProperty); }
 			set { SetValue(TextProperty, value); }

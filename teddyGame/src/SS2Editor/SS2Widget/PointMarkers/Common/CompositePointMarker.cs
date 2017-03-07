@@ -9,28 +9,28 @@ namespace SpeedShark2.PointMarkers
 {
     /// <summary>Composite point markers renders a specified set of markers
     /// at every point of graph</summary>
-	public sealed class CompositePointMarker : PointMarker {
+	public sealed class CompositePointMarker : BasePointMarker {
 		public CompositePointMarker() { }
 
-		public CompositePointMarker(params PointMarker[] markers) {
+		public CompositePointMarker(params BasePointMarker[] markers) {
 			if (markers == null)
 				throw new ArgumentNullException("markers");
 
-            foreach (PointMarker m in markers)
+            foreach (BasePointMarker m in markers)
                 this.markers.Add(m);
 		}
 
-		public CompositePointMarker(IEnumerable<PointMarker> markers) {
+		public CompositePointMarker(IEnumerable<BasePointMarker> markers) {
 			if (markers == null)
 				throw new ArgumentNullException("markers");
-            foreach (PointMarker m in markers)
+            foreach (BasePointMarker m in markers)
                 this.markers.Add(m);
 		}
 
 
-		private readonly Collection<PointMarker> markers = new Collection<PointMarker>();
+		private readonly Collection<BasePointMarker> markers = new Collection<BasePointMarker>();
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-		public Collection<PointMarker> Markers {
+		public Collection<BasePointMarker> Markers {
 			get { return markers; }
 		}
 

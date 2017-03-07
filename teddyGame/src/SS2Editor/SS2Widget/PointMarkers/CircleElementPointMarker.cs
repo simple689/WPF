@@ -6,7 +6,7 @@ using System.Windows.Shapes;
 namespace SpeedShark2.PointMarkers
 {
     /// <summary>Adds Circle element at every point of graph</summary>
-	public class CircleElementPointMarker : ShapeElementPointMarker {
+	public class CircleElementPointMarker : BaseShapeElementPointMarker {
         
         public override UIElement CreateMarker()
         {

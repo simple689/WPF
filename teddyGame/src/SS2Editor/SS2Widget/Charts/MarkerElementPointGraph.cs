@@ -62,16 +62,16 @@ namespace SpeedShark2
 			base.OnDataChanged();
 		}
 
-		public ElementPointMarker Marker
+		public BaseElementPointMarker Marker
 		{
-			get { return (ElementPointMarker)GetValue(MarkerProperty); }
+			get { return (BaseElementPointMarker)GetValue(MarkerProperty); }
 			set { SetValue(MarkerProperty, value); }
 		}
 
 		public static readonly DependencyProperty MarkerProperty =
 			DependencyProperty.Register(
 			  "Marker",
-			  typeof(ElementPointMarker),
+			  typeof(BaseElementPointMarker),
 			  typeof(ElementMarkerPointsGraph),
 			  new FrameworkPropertyMetadata { DefaultValue = null, AffectsRender = true }
 				  );

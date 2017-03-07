@@ -6,7 +6,7 @@ namespace SpeedShark2.PointMarkers
 	public delegate void MarkerRenderer(DrawingContext dc, Point screenPoint);
 
 	/// <summary>Renders markers along graph</summary>
-	public abstract class PointMarker : DependencyObject {
+	public abstract class BasePointMarker : DependencyObject {
 
 		/// <summary>Renders marker on screen</summary>
 		/// <param name="dc">Drawing context to render marker on</param>
@@ -14,11 +14,11 @@ namespace SpeedShark2.PointMarkers
 		/// <param name="screenPoint">Marker center coordinates on drawing context</param>
 		public abstract void Render(DrawingContext dc, Point screenPoint);
 
-		public static implicit operator PointMarker(MarkerRenderer renderer) {
+		public static implicit operator BasePointMarker(MarkerRenderer renderer) {
             return FromRenderer(renderer);
 		}
 
-        public static PointMarker FromRenderer(MarkerRenderer renderer)
+        public static BasePointMarker FromRenderer(MarkerRenderer renderer)
         {
             return new DelegatePointMarker(renderer);
         }

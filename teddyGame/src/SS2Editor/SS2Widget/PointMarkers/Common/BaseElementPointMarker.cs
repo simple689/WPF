@@ -3,7 +3,7 @@
 namespace SpeedShark2.PointMarkers
 {
 	/// <summary>Provides elements that represent markers along the graph</summary>
-	public abstract class ElementPointMarker : DependencyObject {
+	public abstract class BaseElementPointMarker : DependencyObject {
 
         /// <summary>Creates marker element at specified point</summary>
         /// <returns>UIElement representing marker</returns>
