@@ -211,8 +211,6 @@
     <Compile Include="Charts\Navigation\MouseNavigationBase.cs" />
     <Compile Include="Charts\Navigation\NavigationBase.cs" />
     <Compile Include="Charts\Navigation\RectangleSelectionAdorner.cs" />
-    <Compile Include="Charts\Navigation\TouchPadScroll.cs" />
-    <Compile Include="Charts\Navigation\WindowsMessages.cs" />
     <Compile Include="Charts\PointGraphBase.cs" />
     <Compile Include="Charts\RemoveAll.cs" />
     <Compile Include="Charts\Shapes\Arrow.cs" />
@@ -388,6 +386,10 @@
     <Resource Include="Resources\FitToViewIcon.png" />
     <Resource Include="Resources\HelpIcon.png" />
     <Resource Include="Resources\SaveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Style\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
