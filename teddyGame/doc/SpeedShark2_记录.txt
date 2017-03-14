@@ -1,5 +1,18 @@
 SS2View
 https://10.0.0.188:8443/svn/mmo2016001/SpeedShark3
+strList.erase(std::remove(strList.begin(), strList.end(), ""), strList.end());
+
+x * m00 + y * m01 + z * m02 + w * m03 ,
+x * m10 + y * m11 + z * m12 + w * m13 ,
+x * m20 + y * m21 + z * m22 + w * m23 ,
+x * m30 + y * m31 + z * m32 + w * m33  矩阵变换之后应该是这个。
+
+10.0.8.6   10.0.9.3   10.0.8.13  这是三个地址。 
+帐号是  administrator   密码  123456
+
+http://www.aboutcg.org/
+zsjcui
+19850816ji
 
 MainWindow.xaml
 <Window Panel.MainWindow"
