@@ -123,7 +123,7 @@ namespace Teddy {
             }
         }
 
-        public void SendMsg(Msg msg) {
+        public void sendMsg(Msg msg) {
             if ((ushort)msg.GetMgrID() == mMgrId) {
                 ProcessMsg(msg);
             } else {

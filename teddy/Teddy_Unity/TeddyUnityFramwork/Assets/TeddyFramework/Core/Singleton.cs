@@ -21,7 +21,6 @@ namespace Teddy {
                 }
                 return _instance;
             }
-            
         }
 
         public void destroy() {

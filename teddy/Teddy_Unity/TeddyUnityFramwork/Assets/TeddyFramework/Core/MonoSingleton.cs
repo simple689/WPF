@@ -9,21 +9,21 @@ namespace Teddy {
                 if (_instance == null) {
                     _instance = FindObjectOfType<T>();
                     if (FindObjectsOfType<T>().Length > 1) {
-                        Log.instance.print("More than 1!", LogLevel.Error);
+                        Debug.LogError("More than 1!");
                         return _instance;
                     }
                     if (_instance == null) {
                         string instanceName = typeof(T).Name;
-                        Log.instance.print("Instance Name: " + instanceName);
+                        Debug.Log("Instance Name: " + instanceName);
                         GameObject instanceGameObject = GameObject.Find(instanceName);
                         if (instanceGameObject == null) {
                             instanceGameObject = new GameObject(instanceName);
                         }
                         _instance = instanceGameObject.AddComponent<T>();
 						DontDestroyOnLoad (instanceGameObject);
-                        Log.instance.print("Add New Singleton " + _instance.name + " in Game!");
+                        Debug.Log("Add New Singleton " + _instance.name + " in Game!");
                     } else {
-                        Log.instance.print("Already exist: " + _instance.name, LogLevel.Warning);
+                        Debug.LogWarning("Already exist: " + _instance.name);
                     }
                 }
                 return _instance;

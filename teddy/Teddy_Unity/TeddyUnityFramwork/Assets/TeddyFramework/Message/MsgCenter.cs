@@ -2,9 +2,8 @@
 using System.Collections;
 
 namespace Teddy {
-    public class MsgCenter : MonoSingleton<MsgCenter> {
-        void awake() {
-            DontDestroyOnLoad(this);
+    public class MsgCenter : Singleton<MsgCenter> {
+        private MsgCenter() {
         }
 
         public IEnumerator init() {

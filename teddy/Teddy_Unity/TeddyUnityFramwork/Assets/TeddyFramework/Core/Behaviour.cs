@@ -117,8 +117,8 @@ namespace Teddy {
             mCurMgr.UnRegisterMsg(mono, mMsgIds);
         }
 
-        public void SendMsg(Msg msg) {
-            mCurMgr.SendMsg(msg);
+        public void sendMsg(Msg msg) {
+            mCurMgr.sendMsg(msg);
         }
 
         public ushort[] mMsgIds;
