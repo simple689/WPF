@@ -68,7 +68,7 @@ namespace Teddy {
             }
         }
 
-        public static void Assert(bool condition, string info) { // Unity的Debug.Assert()在发布版本有问题。condition条件，info输出信息
+        public static void assert(bool condition, string info) { // Unity的Debug.Assert()在发布版本有问题。condition条件，info输出信息
             if (condition)
                 return;
             Debug.LogError(info);

@@ -6,13 +6,13 @@ using UnityEngine;
 namespace Teddy {
     public class LogOutputFile : ILogOutput { // 文本日志输出
 #if UNITY_EDITOR
-        string _devicePersistentPath = Application.dataPath + "/../PersistentPath";
+        string _devicePersonalPath = Application.dataPath + "/../PersonalPath";
 #elif UNITY_STANDALONE_WIN
-		string _devicePersistentPath = Application.dataPath + "/PersistentPath";
+		string _devicePersonalPath = Application.dataPath + "/PersonalPath";
 #elif UNITY_STANDALONE_OSX
-		string _devicePersistentPath = Application.dataPath + "/PersistentPath";
+		string _devicePersonalPath = Application.dataPath + "/PersonalPath";
 #else
-		string _devicePersistentPath = Application.persistentDataPath;
+		string _devicePersonalPath = Application.personaDataPath;
 #endif
 
         static string _logPath = "Log";
@@ -27,8 +27,8 @@ namespace Teddy {
             App.instance._onApplicationQuit += close;
 
             System.DateTime now = System.DateTime.Now;
-            string logName = string.Format("Q{0}{1}{2}{3}{4}{5}", now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second);
-            string logPath = string.Format("{0}/{1}/{2}.txt", _devicePersistentPath, _logPath, logName);
+            string logName = string.Format("Teddy{0}_{1}_{2}_{3}_{4}_{5}", now.Year, now.Month, now.Day, now.Hour, now.Minute, now.Second);
+            string logPath = string.Format("{0}/{1}/{2}.txt", _devicePersonalPath, _logPath, logName);
             if (File.Exists(logPath)) {
                 File.Delete(logPath);
             }
