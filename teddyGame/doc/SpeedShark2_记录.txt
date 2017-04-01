@@ -14,6 +14,10 @@ http://www.aboutcg.org/
 zsjcui
 19850816ji
 
+G:\mmo2015005\artist\clientPkgResource\release\export_cn\effect
+G:\mmo2015005\artist\clientResourceRelese
+
+
 MainWindow.xaml
 <Window Panel.MainWindow"
 

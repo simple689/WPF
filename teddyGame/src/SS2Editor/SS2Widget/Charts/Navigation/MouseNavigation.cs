@@ -37,20 +37,20 @@ namespace SpeedShark2.Navigation
 		{
 			base.OnPlotterAttached(plotter);
 
-			//Mouse.AddPreviewMouseDownHandler(Parent, OnMouseDown);
-			//Mouse.AddPreviewMouseMoveHandler(Parent, OnMouseMove);
-			//Mouse.AddPreviewMouseUpHandler(Parent, OnMouseUp);
-			//Mouse.AddPreviewMouseWheelHandler(Parent, OnMouseWheel);
-		}
+            Mouse.AddPreviewMouseDownHandler(Parent, OnMouseDown);
+            Mouse.AddPreviewMouseMoveHandler(Parent, OnMouseMove);
+            Mouse.AddPreviewMouseUpHandler(Parent, OnMouseUp);
+            Mouse.AddPreviewMouseWheelHandler(Parent, OnMouseWheel);
+        }
 
 		public override void OnPlotterDetaching(Plotter plotter)
 		{
-			//Mouse.RemovePreviewMouseDownHandler(Parent, OnMouseDown);
-			//Mouse.RemovePreviewMouseMoveHandler(Parent, OnMouseMove);
-			//Mouse.RemovePreviewMouseUpHandler(Parent, OnMouseUp);
-			//Mouse.RemovePreviewMouseWheelHandler(Parent, OnMouseWheel);
+            Mouse.RemovePreviewMouseDownHandler(Parent, OnMouseDown);
+            Mouse.RemovePreviewMouseMoveHandler(Parent, OnMouseMove);
+            Mouse.RemovePreviewMouseUpHandler(Parent, OnMouseUp);
+            Mouse.RemovePreviewMouseWheelHandler(Parent, OnMouseWheel);
 
-			base.OnPlotterDetaching(plotter);
+            base.OnPlotterDetaching(plotter);
 		}
 
 		private void OnMouseWheel(object sender, MouseWheelEventArgs e)
